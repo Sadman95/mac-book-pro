@@ -76,7 +76,7 @@ const totalFinal = document.getElementById('total-final');
 const totalFinalValue = parseInt(totalFinal.innerText);
 const couponInput = document.getElementById('code-input');
 const applyBtn = document.getElementById('btn-apply');
-const addCouponDiv = document.getElementById('addCoupon');
+
 
 
 /* apply button click functionality */
@@ -84,6 +84,13 @@ applyBtn.addEventListener('click', function(){
     if(couponInput.value == 'stevekaku'){
         totalFinal.innerText = parseInt(totalFinal.innerText) - parseInt(totalFinal.innerText)*0.2;
         couponInput.value = '';
+    }
+})
+
+/* apply btn disable to enable */
+couponInput.addEventListener('keyup',function(event){
+    if(event.target.value == 'stevekaku'){
+        applyBtn.removeAttribute('disabled');
     }
 })
 

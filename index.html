@@ -9,32 +9,33 @@
 </head>
 <body>
     <header>
-        <h1 class="text-center mb-5">Mac Book Pro</h1>
+        <h1 class="text-center mb-2 text-secondary">Mac Book Pro</h1>
+        <hr>
     </header>
     <main class="w-75 mx-auto">
         <section class="row row-cols-2">
-            <div class="col-lg-6">
+            <div class="col-lg-5">
                 <img class="img-fluid w-75 float-end" src="images/mac.png" alt="">
             </div>
-            <div class="col-lg-6">
-                <h2>Customize your Blue 24-inch iMac with Apple M1 Chip</h2>
+            <div class="col-lg-7">
+                <h2 class="mb-4">Customize your Blue 24-inch iMac with Apple M1 Chip</h2>
                 <p>Apple M1 Chip with 8 core CPU with 4 performance cores and 4 efficiency cores,7 core GPU and 16 core neural engine 8gb unified memory, 256gb SSD storage, two thudervolt usb 4 ports,Mouse Magic keyboard US English</p>
 
                 <p class="fw-bold mt-5">Memory</p>
                 <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <button id="memory-minus" type="button" class="btn btn-outline-primary">8gb unified memory</button>
-                    <button id="memory-add" type="button" class="btn btn-outline-primary">16gb unified memory</button>
+                    <button id="memory-minus" type="button" class="btn btn-outline-primary rounded-pill">8gb unified memory</button>
+                    <button id="memory-add" type="button" class="btn btn-outline-primary rounded-pill ms-2">16gb unified memory</button>
                 </div>
                 <p class="fw-bold mt-5">Storage</p>
                 <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <button id="storage-min" type="button" class="btn btn-outline-primary">256gb ssd storage</button>
-                    <button id="storage-mid" type="button" class="btn btn-outline-primary">512gb ssd storage</button>
-                    <button id="storage-max" type="button" class="btn btn-outline-primary">1TB ssd storage</button>
+                    <button id="storage-min" type="button" class="btn btn-outline-primary rounded-pill">256gb ssd storage</button>
+                    <button id="storage-mid" type="button" class="btn btn-outline-primary rounded-pill ms-2">512gb ssd storage</button>
+                    <button id="storage-max" type="button" class="btn btn-outline-primary rounded-pill ms-2">1TB ssd storage</button>
                 </div>
                 <p class="fw-bold mt-5">Choose your delivery option</p>
                 <div class="btn-group" role="group" aria-label="Basic outlined example">
-                    <button id="delivery-regular" type="button" class="btn btn-outline-primary">Friday, Aug 25 Free Prime Delivery</button>
-                    <button id="delivery-fast" type="button" class="btn btn-outline-primary">Friday, Aug 21 Delivery Charge 20$</button>
+                    <button id="delivery-regular" type="button" class="btn btn-outline-primary rounded-pill">Friday, Aug 25 Free Prime Delivery</button>
+                    <button id="delivery-fast" type="button" class="btn btn-outline-primary rounded-pill ms-2">Friday, Aug 21 Delivery Charge 20$</button>
                 </div>
 
                 <!-- table -->
@@ -65,14 +66,14 @@
                     </tfoot>
                   </table>
 
-                  <p>Add promo code</p>
-                  <input id="code-input" type="text">
-                  <button id="btn-apply" class="btn btn-danger">Apply</button>
+                  <p class="text-danger">Add promo code</p>
+                  <input class="pb-1" id="code-input" type="text">
+                  <button disabled id="btn-apply" class="btn btn-danger py-1 px-3 rounded-2">Apply</button>
             </div>
         </section>
     </main>
     <footer>
-        <h1 class="text-center mt-4">Total: $ <span id="total-final" class="total">1299</span></h1>
+        <h1 class="text-center mt-4 text-secondary">Total: $ <span id="total-final" class="total">1299</span></h1>
     </footer>
 
 
